@@ -1,0 +1,41 @@
+{
+  "name": "camelize-object",
+  "version": "0.0.1",
+  "description": "Awesome module",
+  "keywords": [],
+  "homepage": "https://github.com/duereg/camelize-object",
+  "bugs": "https://github.com/duereg/camelize-object/issues",
+  "author": {
+    "name": "Matt",
+    "email": "",
+    "url": "https://github.com/duereg"
+  },
+  "main": "./lib/camelize-object.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duereg/camelize-object.git"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "coffee-errors": "^0.8.5",
+    "coffee-script": "^1.7.1",
+    "gulp": "^3.8.6",
+    "gulp-coffee": "^2.1.1",
+    "gulp-istanbul": "^0.2.1",
+    "gulp-mocha": "^0.5.1",
+    "gulp-util": "^3.0.0",
+    "mocha": "^1.18.2",
+    "sinon": "^1.9.1",
+    "sinon-chai": "^2.5.0"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "license": "MIT"
+}
