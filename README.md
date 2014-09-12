@@ -6,11 +6,14 @@
 
 [![NPM](https://nodei.co/npm/camelize-object.svg?style=flat)](https://npmjs.org/package/camelize-object)
 
+Based off of [normalize-case](https://github.com/yields/normalize-case)
+
 ## Installation
 
     npm install camelize-object
 
 ## Usage Example
+
 
 ## Testing
 

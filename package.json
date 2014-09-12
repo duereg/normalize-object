@@ -1,7 +1,7 @@
 {
   "name": "camelize-object",
-  "version": "0.0.1",
-  "description": "Awesome module",
+  "version": "1.0.0",
+  "description": "camelize object",
   "keywords": [],
   "homepage": "https://github.com/duereg/camelize-object",
   "bugs": "https://github.com/duereg/camelize-object/issues",
@@ -19,7 +19,9 @@
     "test": "gulp test"
   },
   "dependencies": {
-    "case": "^1.0.3"
+    "case": "^1.0.3",
+    "underscore": "^1.7.0",
+    "underscore.string": "^2.3.3"
   },
   "devDependencies": {
     "chai": "^1.9.1",
