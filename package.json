@@ -2,7 +2,7 @@
   "name": "camelize-object",
   "version": "1.0.0",
   "description": "camelize object",
-  "keywords": [],
+  "keywords": ["camelize", "camel case", "camel", "object", "coffee"],
   "homepage": "https://github.com/duereg/camelize-object",
   "bugs": "https://github.com/duereg/camelize-object/issues",
   "author": {
