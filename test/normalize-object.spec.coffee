@@ -4,11 +4,12 @@ chai = require 'chai'
 expect = chai.expect
 
 # using compiled JavaScript file here to be sure module works
-camelizeObject = require '../lib/camelize-object.js'
+camelizeObject = require '../lib/normalize-object.js'
 fixtures = require './fixtures'
 
-describe 'camelize-object', ->
+describe 'normalize-object', ->
   fixtures.forEach (fixture) ->
     describe fixture.name, ->
       it 'should work', ->
-        expect(camelizeObject(fixture.input)).to.eql(fixture.output)
+        results = camelizeObject(fixture.input, fixture.method)
+        expect(results).to.eql(fixture.output)

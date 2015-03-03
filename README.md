@@ -1,19 +1,33 @@
-# camelize-object
+# normalize-object
 
-[![Dependency status](http://img.shields.io/david/duereg/camelize-object.svg?style=flat)](https://david-dm.org/duereg/camelize-object)
-[![devDependency Status](http://img.shields.io/david/dev/duereg/camelize-object.svg?style=flat)](https://david-dm.org/duereg/camelize-object#info=devDependencies)
-[![Build Status](http://img.shields.io/travis/duereg/camelize-object.svg?style=flat&branch=master)](https://travis-ci.org/duereg/camelize-object)
+[![Dependency status](http://img.shields.io/david/duereg/normalize-object.svg?style=flat)](https://david-dm.org/duereg/normalize-object)
+[![devDependency Status](http://img.shields.io/david/dev/duereg/normalize-object.svg?style=flat)](https://david-dm.org/duereg/normalize-object#info=devDependencies)
+[![Build Status](http://img.shields.io/travis/duereg/normalize-object.svg?style=flat&branch=master)](https://travis-ci.org/duereg/normalize-object)
 
-[![NPM](https://nodei.co/npm/camelize-object.svg?style=flat)](https://npmjs.org/package/camelize-object)
+[![NPM](https://nodei.co/npm/normalize-object.svg?style=flat)](https://npmjs.org/package/normalize-object)
 
 Based off of [normalize-case](https://github.com/yields/normalize-case)
 
 ## Installation
 
-    npm install camelize-object
+    npm install normalize-object
 
 ## Usage Example
 
+    ` normalize(obj, caseType) `
+
+    Where caseType defaults to camel case
+
+    Supports the following casing types:
+     * camel
+     * capital
+     * constant
+     * lower
+     * pascal
+     * sentence
+     * snake
+     * title
+     * upper
 
 ## Testing
 
@@ -23,7 +37,7 @@ Based off of [normalize-case](https://github.com/yields/normalize-case)
 
 The MIT License (MIT)
 
-Copyright 2014 Matt
+Copyright 2015 Matt
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

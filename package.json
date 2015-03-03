@@ -1,25 +1,28 @@
 {
-  "name": "camelize-object",
+  "name": "normalize-object",
   "version": "1.0.3",
-  "description": "camelize object",
+  "description": "normalize object",
   "keywords": [
-    "camelize",
+    "normalize",
+    "pascalize",
+    "pascal case",
+    "pascal",
     "camel case",
     "camel",
     "object",
     "coffee"
   ],
-  "homepage": "https://github.com/duereg/camelize-object",
-  "bugs": "https://github.com/duereg/camelize-object/issues",
+  "homepage": "https://github.com/duereg/normalize-object",
+  "bugs": "https://github.com/duereg/normalize-object/issues",
   "author": {
     "name": "Matt",
     "email": "",
     "url": "https://github.com/duereg"
   },
-  "main": "./lib/camelize-object.js",
+  "main": "./lib/normalize-object.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/duereg/camelize-object.git"
+    "url": "https://github.com/duereg/normalize-object.git"
   },
   "scripts": {
     "test": "gulp test"
