@@ -34,13 +34,13 @@
   },
   "devDependencies": {
     "chai": "^2.1.0",
-    "coffee-errors": "^0.8.5",
-    "coffee-script": "^1.7.1",
-    "gulp": "^3.8.6",
-    "gulp-coffee": "^2.1.1",
+    "coffee-errors": "^0.8.6",
+    "coffee-script": "^1.9.1",
+    "gulp": "^3.8.11",
+    "gulp-coffee": "^2.3.1",
     "gulp-istanbul": "^0.4.0",
     "gulp-mocha": "^2.0.0",
-    "gulp-util": "^3.0.0"
+    "gulp-util": "^3.0.4"
   },
   "engines": {
     "node": ">=0.10.0",
