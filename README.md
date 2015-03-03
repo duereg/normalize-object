@@ -14,6 +14,26 @@ Based off of [normalize-case](https://github.com/yields/normalize-case)
 
 ## Usage
 
+  Normalize an object and all of its keys (included nested object keys and objects in arrays)
+  to the format of your choosing.
+
+  ` normalize(obj, caseType) `
+
+  Where `caseType` defaults to camel case
+
+  Supports the following casing types:
+   * camel
+   * capital
+   * constant
+   * lower
+   * pascal
+   * sentence
+   * snake
+   * title
+   * upper
+
+## Usage Example
+
 ```javascript
 var normalize = require('normalize-object');
 
@@ -43,23 +63,6 @@ var output = {
   ]
 };
 ```
-
-## Usage Example
-
-  ` normalize(obj, caseType) `
-
-  Where `caseType` defaults to camel case
-
-  Supports the following casing types:
-   * camel
-   * capital
-   * constant
-   * lower
-   * pascal
-   * sentence
-   * snake
-   * title
-   * upper
 
 ## Testing
 
