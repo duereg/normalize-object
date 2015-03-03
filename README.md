@@ -12,22 +12,54 @@ Based off of [normalize-case](https://github.com/yields/normalize-case)
 
     npm install normalize-object
 
+## Usage
+
+```javascript
+var normalize = require('normalize-object');
+
+var input = {
+  api_key: "baz",
+  "first name": "baz",
+  last_name: "foo",
+  array: [
+    { Name: "baz" },
+    { "names  ": [A: 1] }
+  ]
+};
+
+var output = normalize(input, 'camel'); //camel is used by default
+```
+
+Where output would be:
+
+```javascript
+var output = {
+  apiKey: "baz",
+  firstName: "baz",
+  lastName: "foo",
+  array: [
+    { name: "baz" },
+    { names: [a: 1] }
+  ]
+};
+```
+
 ## Usage Example
 
-    ` normalize(obj, caseType) `
+  ` normalize(obj, caseType) `
 
-    Where caseType defaults to camel case
+  Where `caseType` defaults to camel case
 
-    Supports the following casing types:
-     * camel
-     * capital
-     * constant
-     * lower
-     * pascal
-     * sentence
-     * snake
-     * title
-     * upper
+  Supports the following casing types:
+   * camel
+   * capital
+   * constant
+   * lower
+   * pascal
+   * sentence
+   * snake
+   * title
+   * upper
 
 ## Testing
 

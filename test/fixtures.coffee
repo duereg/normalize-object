@@ -1,6 +1,5 @@
 fixtures = []
 
-
 fixtures.push
   name: "simple (defaults to camel)"
   input:
