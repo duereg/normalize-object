@@ -12,7 +12,8 @@ gulp.task 'coffee', ->
 
 gulp.task 'test', ['coffee'], ->
   gulp.src ['lib/**/*.js']
-    .pipe(istanbul()) # Covering files
+    .pipe istanbul({includeUntested: true}) # Covering files
+    .pipe istanbul.hookRequire()
     .on 'finish', ->
       gulp.src(['test/**/*.spec.coffee'])
         .pipe mocha reporter: 'spec', compilers: 'coffee:coffee-script'
