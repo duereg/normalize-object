@@ -1,5 +1,4 @@
 isObject = require('lodash.isobject')
-isArray = require('lodash.isarray')
 methods = require('case')
 
 ###*
@@ -13,7 +12,7 @@ normalize = (obj, caseType = 'camel') ->
   ret = obj
   method = methods[caseType]
 
-  if isArray(obj)
+  if Array.isArray(obj)
     ret = []
     i = 0
 

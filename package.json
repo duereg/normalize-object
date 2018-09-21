@@ -29,7 +29,6 @@
   },
   "dependencies": {
     "case": "^1.4.1",
-    "lodash.isarray": "^4.0.0",
     "lodash.isobject": "^3.0.2"
   },
   "devDependencies": {
