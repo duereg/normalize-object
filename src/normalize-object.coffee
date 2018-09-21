@@ -1,4 +1,5 @@
-_ = require 'underscore'
+isObject = require('lodash.isobject')
+isArray = require('lodash.isarray')
 methods = require('case')
 
 ###*
@@ -12,14 +13,14 @@ normalize = (obj, caseType = 'camel') ->
   ret = obj
   method = methods[caseType]
 
-  if _.isArray(obj)
+  if isArray(obj)
     ret = []
     i = 0
 
     while i < obj.length
       ret.push normalize(obj[i], caseType)
       ++i
-  else if _.isObject(obj)
+  else if isObject(obj)
     ret = {}
     for k of obj
       ret[method(k)] = normalize(obj[k], caseType)

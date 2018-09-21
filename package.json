@@ -29,8 +29,8 @@
   },
   "dependencies": {
     "case": "^1.4.1",
-    "underscore": "^1.7.0",
-    "underscore.string": "^3.3.4"
+    "lodash.isarray": "^4.0.0",
+    "lodash.isobject": "^3.0.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
