@@ -10,12 +10,13 @@
     "camel case",
     "camel",
     "object",
+    "coffeescript",
     "coffee"
   ],
   "homepage": "https://github.com/duereg/normalize-object",
   "bugs": "https://github.com/duereg/normalize-object/issues",
   "author": {
-    "name": "Matt",
+    "name": "Matt Blair",
     "email": "",
     "url": "https://github.com/duereg"
   },
@@ -25,25 +26,27 @@
     "url": "https://github.com/duereg/normalize-object.git"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "build": "gulp coffee",
+    "postinstall": "npm run build"
   },
   "dependencies": {
-    "case": "^1.4.1",
-    "underscore": "^1.7.0",
-    "underscore.string": "^3.3.4"
+    "case": "^1.6.1",
+    "underscore": "^1.9.1",
+    "underscore.string": "^3.3.5"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.2.0",
     "coffee-errors": "^0.8.6",
-    "coffee-script": "^1.10.0",
+    "coffee-script": "^1.12.7",
+    "gulp-istanbul": "^1.1.3",
     "gulp": "^3.9.1",
     "gulp-coffee": "^2.3.2",
-    "gulp-istanbul": "^1.0.0",
     "gulp-mocha": "^2.2.0",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.8"
   },
   "engines": {
-    "node": ">=4",
+    "node": ">=6",
     "npm": ">=3.5"
   },
   "license": "MIT"
