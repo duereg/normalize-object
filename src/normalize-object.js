@@ -5,7 +5,7 @@
  * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
  */
 const methods = require('case');
-const isObject = require('lodash.isobject');
+const isPlainObject = require('lodash.isplainobject');
 
 /**
 Normalize all keys of `obj` recursively.
@@ -26,7 +26,7 @@ var normalize = function(obj, caseType = 'camel') {
       ret.push(normalize(obj[i], caseType));
       ++i;
     }
-  } else if (isObject(obj)) {
+  } else if (isPlainObject(obj)) {
     ret = {};
     for (let k in obj) {
       ret[method(k)] = normalize(obj[k], caseType);

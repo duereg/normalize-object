@@ -5,7 +5,6 @@ fixtures.push({
   input: {
     key_key: [{Key: "baz"}]
   },
-
   output: {
     keyKey: [{key: "baz"}]
   }});
@@ -16,7 +15,6 @@ fixtures.push({
   input: {
     key_key: [{Key: "baz"}]
   },
-
   output: {
     KeyKey: [{Key: "baz"}]
   }});
@@ -27,7 +25,6 @@ fixtures.push({
   input: {
     key_key: [{Key: "baz"}]
   },
-
   output: {
     keyKey: [{key: "baz"}]
   }});
@@ -92,5 +89,21 @@ fixtures.push({
       }
     ]
   }});
+
+const newDate = new Date();
+const newBuffer = new ArrayBuffer([]);
+const newSet = new Set();
+const newMap = new Map();
+const newTypedArray = new Uint32Array();
+
+fixtures.push({
+  name: "various types (defaults to camel)",
+  input: {
+    key_key: [{ newDate, newBuffer, newSet, newMap, newTypedArray }]
+  },
+  output: {
+    keyKey: [{ newDate, newBuffer, newSet, newMap, newTypedArray }]
+  }
+});
 
 module.exports = fixtures;
