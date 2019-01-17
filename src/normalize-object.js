@@ -14,7 +14,7 @@ Normalize all keys of `obj` recursively.
 @return {Object}
 @api public
 */
-var normalize = function(obj, caseType = 'camel') {
+function normalize(obj, caseType = 'camel') {
   let ret = obj;
   const method = methods[caseType];
 
@@ -28,12 +28,13 @@ var normalize = function(obj, caseType = 'camel') {
     }
   } else if (isPlainObject(obj)) {
     ret = {};
-    for (let k in obj) {
+    // eslint-disable-next-line guard-for-in, no-restricted-syntax
+    for (const k in obj) {
       ret[method(k)] = normalize(obj[k], caseType);
     }
   }
 
   return ret;
-};
+}
 
 module.exports = normalize;

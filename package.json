@@ -1,7 +1,7 @@
 {
   "name": "normalize-object",
   "version": "2.0.0",
-  "description": "normalize object",
+  "description": "normalize objects using various types of casing",
   "keywords": [
     "normalize",
     "pascalize",
@@ -9,9 +9,7 @@
     "pascal",
     "camel case",
     "camel",
-    "object",
-    "coffeescript",
-    "coffee"
+    "object"
   ],
   "homepage": "https://github.com/duereg/normalize-object",
   "bugs": "https://github.com/duereg/normalize-object/issues",
@@ -26,7 +24,9 @@
     "url": "https://github.com/duereg/normalize-object.git"
   },
   "scripts": {
-    "test": "nyc --reporter=lcov --reporter=text --reporter=text-summary mocha 'test/**/*.spec.js'"
+    "test": "npm run lint && npm run unit-test",
+    "unit-test": "nyc --reporter=lcov --reporter=text-summary mocha 'test/**/*.spec.js'",
+    "lint": "eslint ./ --fix"
   },
   "dependencies": {
     "case": "^1.6.1",
@@ -35,7 +35,12 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "nyc": "^13.1.0"
+    "nyc": "^13.1.0",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.4"
   },
   "engines": {
     "node": ">=6",
