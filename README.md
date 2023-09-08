@@ -1,9 +1,5 @@
 # normalize-object
 
-[![Dependency status](http://img.shields.io/david/duereg/normalize-object.svg?style=flat)](https://david-dm.org/duereg/normalize-object)
-[![devDependency Status](http://img.shields.io/david/dev/duereg/normalize-object.svg?style=flat)](https://david-dm.org/duereg/normalize-object#info=devDependencies)
-[![Build Status](http://img.shields.io/travis/duereg/normalize-object.svg?style=flat&branch=master)](https://travis-ci.org/duereg/normalize-object)
-
 [![NPM](https://nodei.co/npm/normalize-object.svg?style=flat)](https://npmjs.org/package/normalize-object)
 
 Based off of [normalize-case](https://github.com/yields/normalize-case)

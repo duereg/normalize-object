@@ -9,7 +9,8 @@
     "pascal",
     "camel case",
     "camel",
-    "object"
+    "object",
+    "casing"
   ],
   "homepage": "https://github.com/duereg/normalize-object",
   "bugs": "https://github.com/duereg/normalize-object/issues",
